@@ -10,17 +10,17 @@ export class RecipeListComponent implements OnInit {
     new RecipeModel(
       "Spaghetti alla chitarra",
       "Un particolare tipo di pasta che...",
-      "https://blog.cookaround.com/lamimosarosa/spaghetti-alla-chitarra-con-pomodorini/"
+      "https://blog.cookaround.com/lamimosarosa/wp-content/uploads/2017/09/Spaghetti-alla-chitarra.jpg"
     ),
     new RecipeModel(
       "Lasagne alla bolognese",
       "La pasta dei froci",
-      "https://www.latuadietapersonalizzata.it/2019/08/26/lasagna-alla-bolognese-ricetta/"
+      "https://www.latuadietapersonalizzata.it/wp-content/uploads/2019/08/lasagna-alla-bolognesejpg-1024x1024.jpg"
     ),
     new RecipeModel(
       "Gnocchi al formaggio",
       "La pasta dei neri",
-      "https://ricette.giallozafferano.it/Gnocchi-della-Val-Varaita.html"
+      "https://www.giallozafferano.it/images/225-22556/Gnocchi-della-Val-Varaita_780x520_wm.jpg"
     ),
     new RecipeModel(
       "Tiramisu",
