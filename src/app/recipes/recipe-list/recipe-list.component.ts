@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RecipeModel } from 'src/app/models/recipe.model';
 @Component({
   selector: 'app-recipe-list',
@@ -6,32 +6,35 @@ import { RecipeModel } from 'src/app/models/recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
+  @Output() recipeSelectedInList = new EventEmitter<RecipeModel>()
   recipes:RecipeModel[]=[
     new RecipeModel(
-      "Spaghetti alla chitarra",
-      "Un particolare tipo di pasta che...",
-      "https://blog.cookaround.com/lamimosarosa/wp-content/uploads/2017/09/Spaghetti-alla-chitarra.jpg"
+      'Spaghetti alla chitarra',
+      'Un particolare tipo di pasta che ...',
+      'https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg'
     ),
     new RecipeModel(
-      "Lasagne alla bolognese",
-      "La pasta dei froci",
-      "https://www.latuadietapersonalizzata.it/wp-content/uploads/2019/08/lasagna-alla-bolognesejpg-1024x1024.jpg"
+      'Lasagne alla bolognese',
+      'Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...',
+      'https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420'
     ),
     new RecipeModel(
-      "Gnocchi al formaggio",
-      "La pasta dei neri",
-      "https://www.giallozafferano.it/images/225-22556/Gnocchi-della-Val-Varaita_780x520_wm.jpg"
+      'Ravioles al Formaggio',
+      'Ottimi soprattutto in Val Varaita nella variante Ravioles...',
+      'https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg'
     ),
     new RecipeModel(
-      "Tiramisu",
-      "Classico dolce italiano con panna e mascarpone...",
-      "https://www.buttalapasta.it/wp-content/uploads/2012/04/ricetta-tiramisu-classico.jpg"
+      'Tiramisù',
+      'Classico dolce italiano con mascarpone ...',
+      'https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg'
     )
-  ];
-  selectedRecipe: RecipeModel;
-  constructor() { 
-    this.selectedRecipe=this.recipes[0];
-  }
-  ngOnInit(): void {
+  ]
+  selectedRecipe:RecipeModel
+  constructor() {
+    this.selectedRecipe=this.recipes[0]
+   }
+  ngOnInit(): void {}
+  onRecipeSelected(recipe:RecipeModel){
+    this.recipeSelectedInList.emit(recipe);
   }
 }
