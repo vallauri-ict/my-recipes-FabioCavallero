@@ -25,5 +25,12 @@
     <div class="col-xs-12">{{ recipeService.selectedRecipe.description }}</div>
 </div>
 <div class="row">
-    <div class="col-xs-12">Ingredients</div>
+    <div class="col-xs-12">
+        <h4>Ingredients</h4>
+            <ul class="list-group" style="list-style: none;">
+                <li *ngfor="let Ingredient of recipeService.selectedRecipe.Ingredients">
+                    {{Ingredient.name}} - {{Ingredient.amount}}
+                </li>
+            </ul>
+    </div>
 </div>

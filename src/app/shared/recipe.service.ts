@@ -12,7 +12,7 @@ export class RecipeService {
   {
       this.dataStorageService.sendGetRequest('recipes').subscribe(data => {
       this.recipes=data as RecipeModel[];
-      this.selectedRecipe=this.recipes[0]
+      //this.selectedRecipe=this.recipes[0]
     },
     error => {
       console.error(error);
