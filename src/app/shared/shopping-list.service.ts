@@ -24,15 +24,35 @@ export class ShoppingListService {
       {
         ingredientFound = true;
         item.amount += ingredient.amount;
+        this.patchIngredient({amount: item.amount,id: 0,name: ''},item.id);
         break;
       }
-      else
-      {
-
-      }
+    }
+    if(!ingredientFound)
+    {
+      this.ingredients.push(ingredient);
+      this.postIngredient(ingredient);
     }
   }
   addIngredients(ingredients:IngredientModel[]){
     this.ingredients.push(...ingredients);
+  }
+  postIngredient(ingredient:IngredientModel){
+    this.dataStorageService.sendPostRequest('shopping-list',ingredient)
+    .subscribe(data=>{
+      console.log(data);
+    },
+    error=> {
+      console.error(error);
+    });
+  }
+  patchIngredient(ingredient:IngredientModel,id:number){
+    this.dataStorageService.sendPatchRequest('shopping-list/' + id,ingredient)
+    .subscribe(data=>{
+      console.log(data);
+    },
+    error=> {
+      console.error(error);
+    });
   }
 }
