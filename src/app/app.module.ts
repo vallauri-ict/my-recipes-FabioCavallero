@@ -13,6 +13,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { from } from 'rxjs';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { HighlightDirective } from './shared/highlight.directive';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { HighlightDirective } from './shared/highlight.directive';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
