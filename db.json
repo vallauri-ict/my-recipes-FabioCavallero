@@ -24,19 +24,22 @@
         "id": 2,
         "name": "Lasagne alla bolognese",
         "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
-        "imagePath": "https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420"
+        "imagePath": "https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420",
+        "ingredients": []
       },
       {
         "id": 3,
         "name": "Gnocchi ai formaggi",
         "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
-        "imagePath": "https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg"
+        "imagePath": "https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg",
+        "ingredients": []
       },
       {
         "id": 4,
         "name": "Tiramisu",
         "description": "Classico dolce italiano con panna e mascarpone ...",
-        "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg"
+        "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg",
+        "ingredients": []
       }
     ],
     "shopping-list": [

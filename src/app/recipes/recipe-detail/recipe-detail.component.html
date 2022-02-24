@@ -29,8 +29,8 @@
                 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a (click)="sendToShoppingList()">To Shopping List</a></li>
-                <li><a>Edit Recipe</a></li>
+                <li (click)="sendToShoppingList()"><a>To Shopping List</a></li>
+                <li (click)="onEditRecipe()"><a>Edit Recipe</a></li>
                 <li><a>Delete Recipe</a></li>
             </ul>
         </div>
