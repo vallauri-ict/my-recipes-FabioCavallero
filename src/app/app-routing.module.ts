@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+//import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RecipesComponent } from './recipes/recipes.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
@@ -13,7 +13,7 @@ const appRoutes: Routes= [
     pathMatch:'full'
   },
   {
-    path:'recipes', //senza /
+    path:'recipes', //senza "/"
     component:RecipesComponent,
     children: [
       {path:'', component: RecipeStartComponent},
@@ -23,16 +23,13 @@ const appRoutes: Routes= [
     ]
   },
   {
-    path:'shopping-list',
+    path:'shopping-list', // senza "/"
     component:ShoppingListComponent
   },
 ]
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    [RouterModule.forRoot(appRoutes)]
-  ],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports:[RouterModule]
 })
 export class AppRoutingModule { }

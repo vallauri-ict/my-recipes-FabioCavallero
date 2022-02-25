@@ -3,10 +3,10 @@
     <div class="col-sm-8">
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" [(ngModel)]="recipeName">
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description">Description:</label>
             <textarea name="description" id="description" rows="5" class="form-control" [(ngModel)]="recipeDescription"></textarea>
         </div>
         <div class="form-group">
@@ -18,7 +18,7 @@
             <textarea name="ingredients" id="ingredients" rows="5" placeholder="ingredientName : qta" class="form-control" [(ngModel)]="recipeIngredients"></textarea>
         </div>
         <div class="form-group" style="margin-top: 20px !important;">
-            <input type="button" class="btn btn-success btn-block" value="SAVE" [(ngModel)]="buttonText" (click)="onSave()">
+            <input type="button" class="btn btn-success btn-block" [(ngModel)]="buttonText" (click)="onSave()">
         </div>
     </div>
     <div class="col-sm-2"></div>
