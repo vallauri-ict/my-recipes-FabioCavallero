@@ -1,82 +1,82 @@
 {
-    "recipes": [
-      {
-        "id": 1,
-        "name": "Spaghetti al mandolino",
-        "description": "Un particolare tipo di pasta che ...",
-        "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg",
-        "ingredients": [
-          {
-            "name": "Farina",
-            "amount": 100
-          },
-          {
-            "name": "Acqua",
-            "amount": 500
-          },
-          {
-            "name": "Sale",
-            "amount": 10
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Lasagne alla bolognese",
-        "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
-        "imagePath": "https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420",
-        "ingredients": []
-      },
-      {
-        "id": 3,
-        "name": "Gnocchi ai formaggi",
-        "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
-        "imagePath": "https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg",
-        "ingredients": []
-      },
-      {
-        "id": 4,
-        "name": "Tiramisu",
-        "description": "Classico dolce italiano con panna e mascarpone ...",
-        "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg",
-        "ingredients": []
-      }
-    ],
-    "shopping-list": [
-      {
-        "id": 1,
-        "name": "Sugar",
-        "amount": 11
-      },
-      {
-        "id": 2,
-        "name": "Tomato",
-        "amount": 2
-      },
-      {
-        "name": "Fish",
-        "amount": 6,
-        "id": 3
-      },
-      {
-        "name": "Patate",
-        "amount": 2,
-        "id": 4
-      },
-      {
-        "name": "Farina",
-        "amount": 200,
-        "id": 5
-      },
-      {
-        "name": "Acqua",
-        "amount": 1000,
-        "id": 6
-      },
-      {
-        "name": "Sale",
-        "amount": 20,
-        "id": 7
-      }
-    ]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti al mandolino",
+      "description": "Un particolare tipo di pasta che ...",
+      "imagePath": "https://images.lacucinaitaliana.it/wp-content/uploads/2020/06/03204258/Pasta-alla-chitarra-con-ragu-di-polo.jpg",
+      "ingredients": [
+        {
+          "name": "Farina",
+          "amount": 100
+        },
+        {
+          "name": "Acqua",
+          "amount": 500
+        },
+        {
+          "name": "Sale",
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lasagne alla bolognese",
+      "description": "Pasta emiliana molto calorica sempre presente nei pranzi domenicali ...",
+      "imagePath": "https://www.tribugolosa.com/uploads/media/lasagne-alla-bolognese-hem1.jpg?1389133420",
+      "ingredients": []
+    },
+    {
+      "id": 3,
+      "name": "Gnocchi ai formaggi",
+      "description": "Ottimi soprattutto in Val Varaita nella variante 'Ravioles' ...",
+      "imagePath": "https://media-cdn.tripadvisor.com/media/photo-s/14/b1/37/d3/ravioles-della-valle.jpg",
+      "ingredients": []
+    },
+    {
+      "id": 4,
+      "name": "Tiramisu",
+      "description": "Classico dolce italiano con panna e mascarpone ...",
+      "imagePath": "https://toscanedigusto.com/wp-content/uploads/2019/09/maxresdefault.jpg",
+      "ingredients": []
+    }
+  ],
+  "shopping-list": [
+    {
+      "id": 1,
+      "name": "Sugar",
+      "amount": 11
+    },
+    {
+      "id": 2,
+      "name": "Tomato",
+      "amount": 2
+    },
+    {
+      "name": "Fish",
+      "amount": 6,
+      "id": 3
+    },
+    {
+      "name": "Patate",
+      "amount": 2,
+      "id": 4
+    },
+    {
+      "name": "Farina",
+      "amount": 300,
+      "id": 5
+    },
+    {
+      "name": "Acqua",
+      "amount": 1500,
+      "id": 6
+    },
+    {
+      "name": "Sale",
+      "amount": 30,
+      "id": 7
+    }
+  ]
 }

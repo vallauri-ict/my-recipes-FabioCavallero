@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { DataStorageService } from './data-storage.service';
 import { IngredientModel } from '../models/ingredient.model';
+
 @Injectable({
   providedIn: 'root',
 })
 export class ShoppingListService {
   ingredients: IngredientModel[] = [];
+
   constructor(private dataStorageService: DataStorageService) {}
+
   getIngredients() {
     this.dataStorageService.sendGetRequest('shopping-list').subscribe(
       (data) => {
@@ -17,6 +20,7 @@ export class ShoppingListService {
       }
     );
   }
+
   addIngredient(ingredient: IngredientModel) {
     let ingredientFound = false;
     for (let item of this.ingredients) {
@@ -32,12 +36,14 @@ export class ShoppingListService {
       this.postIngredient(ingredient);
     }
   }
+
   addIngredients(ingredients: IngredientModel[]) {
     //  this.ingredients.push(...ingredients);
     for (const ingredient of ingredients) {
       this.addIngredient(ingredient);
     }
   }
+
   postIngredient = (ingredient: IngredientModel) => {
     this.dataStorageService
       .sendPostRequest('shopping-list', ingredient)
@@ -51,9 +57,10 @@ export class ShoppingListService {
         }
       );
   };
+
   patchIngredient = (data: any, id: number) => {
     this.dataStorageService
-      .sendPatchtRequest('shopping-list/' + id, data)
+      .sendPatchRequest('shopping-list/' + id, data)
       .subscribe(
         (succ) => {
           console.log(succ);

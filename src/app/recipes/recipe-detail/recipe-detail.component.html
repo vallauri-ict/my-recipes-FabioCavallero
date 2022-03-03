@@ -3,14 +3,19 @@
         <img [src]="recipeService.selectedRecipe?.imagePath" alt="{{ recipeService.selectedRecipe?.name }}" class="img-responsive">
     </div>
 </div>
+
 <div class="row">
     <div class="col-xs-12">
         <h1>{{ recipeService.selectedRecipe?.name }}</h1>
     </div>
 </div>
+
+
+
 <div class="row">
     <div class="col-xs-12">{{ recipeService.selectedRecipe?.description }}</div>
 </div>
+
 <div class="row">
     <div class="col-xs-12">
         <h4>Ingredients:</h4>
@@ -21,6 +26,7 @@
         </ul>
     </div>
 </div>
+
 <div class="row">
     <div class="col-xs-12">
         <div class="button-group" appDropdown>
@@ -30,8 +36,8 @@
             </button>
             <ul class="dropdown-menu">
                 <li (click)="sendToShoppingList()"><a>To Shopping List</a></li>
-                <li (click)="onEditRecipe()"><a>Edit Recipe</a></li>
-                <li><a>Delete Recipe</a></li>
+                <li (click)="onEditRecipe()"><a >Edit Recipe</a></li>
+                <li (click)="onDeleteRecipe()"><a >Delete Recipe</a></li>
             </ul>
         </div>
         <!-- <button class="btn-primary" (click)="sendToShoppingList()">To shopping list</button> -->
