@@ -20,14 +20,17 @@ export class ShoppingEditComponent implements OnInit {
     if (this.ingredientAmount > 0) {
       const newIngredient: IngredientModel = new IngredientModel(this.ingredientName, this.ingredientAmount);
       this.ingredientAdded.emit(newIngredient);
-    } else {
+    } 
+    else {
       alert("Amount must be > 0!");
     }
   }
-
+  deleteIngredient()
+  {
+    
+  }
   clearList(){
     this.ingredientName = '';
     this.ingredientAmount = 0;
   }
-
 }
