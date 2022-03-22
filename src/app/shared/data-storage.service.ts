@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
 @Injectable({
   providedIn: 'root',
 })
 export class DataStorageService {
-  private REST_API_SERVER = 'http://localhost:3000/';
-
+  //private REST_API_SERVER = 'http://localhost:3000/';
+  private REST_API_SERVER ='https://fabio-cavallero-crud-server.herokuapp.com';
   constructor(private httpClient: HttpClient) { }
 
   public sendGetRequest(endpoint: string) {

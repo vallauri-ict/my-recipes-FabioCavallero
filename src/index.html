@@ -8,6 +8,29 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBdsrNOJGukgfPIx2VooR_GNocefjOdRMs",
+      authDomain: "my-recipes-8aaaa.firebaseapp.com",
+      projectId: "my-recipes-8aaaa",
+      storageBucket: "my-recipes-8aaaa.appspot.com",
+      messagingSenderId: "684598345259",
+      appId: "1:684598345259:web:2d25ad40c3eceb13a8746e",
+      measurementId: "G-TDEZW2NQZZ"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <app-root></app-root>
 </body>
 </html>
